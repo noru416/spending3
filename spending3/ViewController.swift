@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     @objc func doneBtnPressed() {
         let inputText = priceTextField.text!
         print(inputText)
-        performSegue(withIdentifier: "PriceToCategory", sender: self)
+        performSegue(withIdentifier: "PriceToCategory", sender: inputText)
     }
 
 }
