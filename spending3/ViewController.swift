@@ -23,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var DestViewController : ViewController2 = segue.destination as! ViewController2
+        DestViewController.LabelText = priceTextField.text!
+    }
+    
     func addButtonToTextField(textField: UITextField){
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -44,7 +49,9 @@ class ViewController: UIViewController {
     @objc func doneBtnPressed() {
         let inputText = priceTextField.text!
         print(inputText)
-        performSegue(withIdentifier: "PriceToCategory", sender: inputText)
+        performSegue(withIdentifier: "PriceToCategory", sender: nil)
     }
+    
+    
 
 }

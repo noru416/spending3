@@ -47,20 +47,16 @@
         <!--View Controller2-->
         <scene sceneID="hxd-Jb-58a">
             <objects>
-                <viewController id="lJq-r5-IFu" customClass="ViewController2" sceneMemberID="viewController">
+                <viewController id="lJq-r5-IFu" customClass="ViewController2" customModule="spending3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ifF-V1-REn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="li4-Zv-oXh" userLabel="Box">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvR-Rn-F3G">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Category" id="W2p-OA-XV0">
+                                    <navigationItem title="Recipt" id="W2p-OA-XV0">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="vpW-G3-CxT">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="gkh-Ki-uAS"/>
@@ -69,20 +65,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-7h-5Xd">
+                                <rect key="frame" x="153" y="315.5" width="68.5" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="li4-Zv-oXh" firstAttribute="top" secondItem="lBA-CO-bsl" secondAttribute="top" constant="249" id="ArW-LB-GoG"/>
-                            <constraint firstItem="li4-Zv-oXh" firstAttribute="centerY" secondItem="ifF-V1-REn" secondAttribute="centerY" id="EMc-f2-Q8x"/>
-                            <constraint firstItem="li4-Zv-oXh" firstAttribute="centerX" secondItem="ifF-V1-REn" secondAttribute="centerX" id="NGK-4K-RUI"/>
-                            <constraint firstItem="li4-Zv-oXh" firstAttribute="leading" secondItem="lBA-CO-bsl" secondAttribute="leading" constant="67" id="ftn-4D-bM3"/>
+                            <constraint firstItem="KpE-7h-5Xd" firstAttribute="centerX" secondItem="ifF-V1-REn" secondAttribute="centerX" id="DRt-DD-2oa"/>
+                            <constraint firstItem="KpE-7h-5Xd" firstAttribute="centerY" secondItem="ifF-V1-REn" secondAttribute="centerY" id="kjo-zQ-34f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lBA-CO-bsl"/>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="KpE-7h-5Xd" id="Qo8-dR-Fsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68X-C1-oxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="32.833583208395808"/>
+            <point key="canvasLocation" x="519" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gvN-0C-UVd">

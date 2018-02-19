@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class ViewController2: UIViewController {
+    
+    @IBOutlet var Label: UILabel!
+    
+    var LabelText = String()
+    
+    override func viewDidLoad() {
+        Label.text = LabelText
+    }
+}
